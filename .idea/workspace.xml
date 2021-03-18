@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5e44ee8-c20c-4f03-9705-d7e68d7fa681" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/go/go1.15.3" />
+  <component name="ProjectId" id="1phpoQ6fZPfVxbOPZxMpsqhNpTG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build github.com/dk-lockdown/seata-samples/aggregation_svc">
+    <configuration name="go build github.com/dk-lockdown/seata-samples/aggregation_svc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="seata-samples" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/aggregation_svc/main.go" />
+      <package value="github.com/dk-lockdown/seata-samples/aggregation_svc" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/dk-lockdown/seata-samples/order_svc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="seata-samples" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/order_svc/main.go" />
+      <package value="github.com/dk-lockdown/seata-samples/order_svc" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/dk-lockdown/seata-samples/product_svc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="seata-samples" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/product_svc/main.go" />
+      <package value="github.com/dk-lockdown/seata-samples/product_svc" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/dk-lockdown/seata-samples/aggregation_svc" />
+        <item itemvalue="Go Build.go build github.com/dk-lockdown/seata-samples/order_svc" />
+        <item itemvalue="Go Build.go build github.com/dk-lockdown/seata-samples/product_svc" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn/" />
+      </map>
+    </environment>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="772" height="365" key="DebuggerActiveHint" timestamp="1615992695625">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="772" height="365" key="DebuggerActiveHint/0.25.1440.826@0.25.1440.826" timestamp="1615992695625" />
+    <state width="747" height="466" key="DebuggerActiveHint/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652185612" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom" timestamp="1616069463896">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.25.1440.826@0.25.1440.826" timestamp="1616069463896" />
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550506" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center" timestamp="1616069463895">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.center/0.25.1440.826@0.25.1440.826" timestamp="1616069463895" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550505" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left" timestamp="1616069463895">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.left/0.25.1440.826@0.25.1440.826" timestamp="1616069463895" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550505" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right" timestamp="1616069463895">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.right/0.25.1440.826@0.25.1440.826" timestamp="1616069463895" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550506" />
+    <state width="1398" height="277" key="GridCell.Tab.1.bottom" timestamp="1616035661950">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="277" key="GridCell.Tab.1.bottom/0.25.1440.826@0.25.1440.826" timestamp="1616035661950" />
+    <state width="1878" height="398" key="GridCell.Tab.1.bottom/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550479" />
+    <state width="1398" height="277" key="GridCell.Tab.1.center" timestamp="1616035661949">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="277" key="GridCell.Tab.1.center/0.25.1440.826@0.25.1440.826" timestamp="1616035661949" />
+    <state width="1878" height="398" key="GridCell.Tab.1.center/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550479" />
+    <state width="1398" height="277" key="GridCell.Tab.1.left" timestamp="1616035661949">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="277" key="GridCell.Tab.1.left/0.25.1440.826@0.25.1440.826" timestamp="1616035661949" />
+    <state width="1878" height="398" key="GridCell.Tab.1.left/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550478" />
+    <state width="1398" height="277" key="GridCell.Tab.1.right" timestamp="1616035661949">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="1398" height="277" key="GridCell.Tab.1.right/0.25.1440.826@0.25.1440.826" timestamp="1616035661949" />
+    <state width="1878" height="398" key="GridCell.Tab.1.right/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652550479" />
+    <state x="2044" y="205" key="SettingsEditor" timestamp="1615645498847">
+      <screen x="1440" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2044" y="205" key="SettingsEditor/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615645498847" />
+    <state width="720" height="413" key="XDebugger.FullValuePopup" timestamp="1616034032203">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state width="720" height="413" key="XDebugger.FullValuePopup/0.25.1440.826@0.25.1440.826" timestamp="1616034032203" />
+    <state width="960" height="527" key="XDebugger.FullValuePopup/1440.25.1920.1055/0.25.1440.826@1440.25.1920.1055" timestamp="1615652236618" />
+    <state x="421" y="164" width="597" height="548" key="find.popup" timestamp="1616069489310">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state x="421" y="164" width="597" height="548" key="find.popup/0.25.1440.826@0.25.1440.826" timestamp="1616069489310" />
+    <state x="385" y="175" width="670" height="676" key="search.everywhere.popup" timestamp="1615906533991">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state x="385" y="175" width="670" height="676" key="search.everywhere.popup/0.25.1440.826@0.25.1440.826" timestamp="1615906533991" />
+    <state x="450" y="354" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1615991779525">
+      <screen x="0" y="25" width="1440" height="826" />
+    </state>
+    <state x="450" y="354" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.25.1440.826@0.25.1440.826" timestamp="1615991779525" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha/statement.go</url>
+          <line>62</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha/executor.go</url>
+          <line>127</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha/executor.go</url>
+          <line>112</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha2/executor.go</url>
+          <line>127</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha3/executor.go</url>
+          <line>127</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha3/schema/table_meta.go</url>
+          <line>15</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha3/table_meta_cache.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha3/table_meta_cache.go</url>
+          <line>51</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha3/table_meta_cache.go</url>
+          <line>187</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha3/table_meta_cache.go</url>
+          <line>85</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha4/table_meta_cache.go</url>
+          <line>52</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha4/executor.go</url>
+          <line>127</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha4/statement.go</url>
+          <line>86</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha4/table_meta_cache.go</url>
+          <line>47</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha5/table_meta_cache.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha6/table_meta_cache.go</url>
+          <line>146</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha7/table_meta_cache.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha7/table_meta_cache.go</url>
+          <line>154</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha7/table_meta_cache.go</url>
+          <line>150</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha8/table_meta_cache.go</url>
+          <line>151</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha8/table_meta_cache.go</url>
+          <line>155</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha9/table_meta_cache.go</url>
+          <line>151</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha9/table_meta_cache.go</url>
+          <line>155</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha10/table_meta_cache.go</url>
+          <line>151</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha10/table_meta_cache.go</url>
+          <line>155</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha10/table_meta_cache.go</url>
+          <line>148</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.0-alpha10/table_meta_cache.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.2/table_meta_cache.go</url>
+          <line>151</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.2/table_meta_cache.go</url>
+          <line>155</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.2/table_meta_cache.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.2/table_meta_cache.go</url>
+          <line>128</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.2/connection.go</url>
+          <line>436</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/statement.go</url>
+          <line>86</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/executor.go</url>
+          <line>195</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/executor.go</url>
+          <line>196</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/executor.go</url>
+          <line>239</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/table_meta_cache.go</url>
+          <line>85</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/table_meta_cache.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/packets.go</url>
+          <line>750</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.3/packets.go</url>
+          <line>758</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/statement.go</url>
+          <line>86</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/executor.go</url>
+          <line>127</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/executor.go</url>
+          <line>121</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/table_meta_cache.go</url>
+          <line>45</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/table_meta_cache.go</url>
+          <line>85</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/packets.go</url>
+          <line>803</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.6/executor.go</url>
+          <line>121</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.6/table_meta_cache.go</url>
+          <line>180</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.6/table_meta_cache.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.6/rows.go</url>
+          <line>219</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.7/table_meta_cache.go</url>
+          <line>95</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/packets.go</url>
+          <line>84</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/packets.go</url>
+          <line>63</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.5/table_meta_cache.go</url>
+          <line>182</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/packets.go</url>
+          <line>755</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/packets.go</url>
+          <line>742</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/executor.go</url>
+          <line>202</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/executor.go</url>
+          <line>186</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/packets.go</url>
+          <line>553</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/connection.go</url>
+          <line>445</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/executor.go</url>
+          <line>526</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.4/executor.go</url>
+          <line>527</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.8/executor.go</url>
+          <line>126</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.8/executor.go</url>
+          <line>524</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.1.9/executor.go</url>
+          <line>524</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.0/executor.go</url>
+          <line>529</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.0/executor.go</url>
+          <line>533</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.2/transaction.go</url>
+          <line>93</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.3/transaction.go</url>
+          <line>43</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.3/connection.go</url>
+          <line>360</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.4/transaction.go</url>
+          <line>43</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.4/mysql_undo_log_manager.go</url>
+          <line>219</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/dk-lockdown/mysql@v0.2.4/packets.go</url>
+          <line>1134</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="*(*&quot;int&quot;)(824638546832)" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
