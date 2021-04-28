@@ -18,7 +18,7 @@ import (
 	"github.com/opentrx/seata-go-samples/order_svc/dao"
 )
 
-const configPath = "/Users/scottlewis/dksl/temp/seata-samples/order_svc/conf/client.yml"
+const configPath = "/Users/scottlewis/dksl/temp/seata-samples/http/order_svc/conf/client.yml"
 
 func main() {
 	r := gin.Default()
