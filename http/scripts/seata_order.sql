@@ -70,7 +70,7 @@ CREATE TABLE `so_master` (
   `so_amt` decimal(16,6) DEFAULT NULL COMMENT '订单总额',
   `status` tinyint(4) DEFAULT NULL COMMENT '10,创建成功，待支付；30；支付成功，待发货；50；发货成功，待收货；70，确认收货，已完成；90，下单失败；100已作废',
   `order_date` timestamp NULL DEFAULT NULL COMMENT '下单时间',
-  `paymemt_date` timestamp NULL DEFAULT NULL COMMENT '支付时间',
+  `payment_date` timestamp NULL DEFAULT NULL COMMENT '支付时间',
   `delivery_date` timestamp NULL DEFAULT NULL COMMENT '发货时间',
   `receive_date` timestamp NULL DEFAULT NULL COMMENT '发货时间',
   `appid` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '订单来源',
