@@ -31,19 +31,6 @@ func (dao *Dao) AllocateInventory(ctx context.Context, reqs []*AllocateInventory
 	})
 
 	for _, req := range reqs {
-		//item := &Inventory{}
-		//tx.Model(&Inventory{}).Where("product_sysno = ? and available_qty >= ?", req.ProductSysNo, req.Qty).Scan(&item)
-		//if err := tx.Model(&Inventory{}).
-		//	Where("product_sysno = ? and available_qty >= ?", req.ProductSysNo, req.Qty).
-		//	Updates(map[string]interface{}{
-		//		"available_qty": item.AvailableQty - req.Qty,
-		//		"allocated_qty": item.AllocatedQty + req.Qty}).
-		//	Error; err != nil {
-		//	tx.Rollback()
-		//	return err
-		//}
-
-		// TODO 以下注释写法导致undo_log记录的有问题，需要排查
 		if err := tx.Model(&Inventory{}).
 			Where("product_sysno = ? and available_qty >= ?", req.ProductSysNo, req.Qty).
 			UpdateColumns(map[string]interface{}{
