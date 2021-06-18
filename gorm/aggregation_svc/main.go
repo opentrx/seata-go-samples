@@ -11,7 +11,7 @@ import (
 	"github.com/opentrx/seata-go-samples/aggregation_svc/svc"
 )
 
-var configPath = "/Users/caocx/Projects/Go/github.com/seata-go-samples/gorm/aggregation_svc/conf/client.yml"
+var configPath = "/Users/scottlewis/dksl/temp/seata-samples/gorm/aggregation_svc/conf/client.yml"
 
 func main() {
 	r := gin.Default()

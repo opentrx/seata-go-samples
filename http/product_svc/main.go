@@ -4,27 +4,26 @@ import (
 	"context"
 	"database/sql"
 	"net/http"
+	"os"
 	"time"
-)
 
-import (
 	"github.com/gin-gonic/gin"
 	"github.com/opentrx/mysql"
-	"github.com/transaction-wg/seata-golang/pkg/client"
-	"github.com/transaction-wg/seata-golang/pkg/client/config"
-)
+	"github.com/opentrx/seata-golang/v2/pkg/client"
+	"github.com/opentrx/seata-golang/v2/pkg/client/config"
+	"github.com/opentrx/seata-golang/v2/pkg/client/rm"
 
-import (
 	"github.com/opentrx/seata-go-samples/product_svc/dao"
 )
 
-const configPath = "/Users/scottlewis/dksl/temp/seata-samples/product_svc/conf/client.yml"
 
 func main() {
 	r := gin.Default()
-	config.InitConf(configPath)
-	client.NewRpcClient()
-	mysql.InitDataResourceManager()
+
+	configPath := os.Getenv("ConfigPath")
+	conf := config.InitConfiguration(configPath)
+	client.Init(conf)
+	rm.RegisterTransactionServiceServer(mysql.GetDataSourceManager())
 	mysql.RegisterResource(config.GetATConfig().DSN)
 
 	sqlDB, err := sql.Open("mysql", config.GetATConfig().DSN)

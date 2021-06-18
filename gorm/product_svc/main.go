@@ -18,7 +18,7 @@ import (
 	"github.com/opentrx/seata-go-samples/product_svc/dao"
 )
 
-const configPath = "/Users/caocx/Projects/Go/github.com/seata-go-samples/gorm/product_svc/conf/client.yml"
+const configPath = "/Users/scottlewis/dksl/temp/seata-samples/gorm/product_svc/conf/client.yml"
 
 func main() {
 	r := gin.Default()
