@@ -13,8 +13,3 @@ replace (
 	github.com/opentrx/mysql => /Users/scottlewis/dksl/current/mysql
 	github.com/opentrx/seata-golang/v2 => /Users/scottlewis/dksl/current/seata-golang/
 )
-
-exclude (
-	github.com/go-sql-driver/mysql v1.5.0
-	github.com/go-sql-driver/mysql v1.6.0
-)

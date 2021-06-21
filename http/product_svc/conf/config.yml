@@ -6,10 +6,10 @@ tm:
   rollbackRetryCount: 5
 at:
   dsn: "root:123456@tcp(127.0.0.1:3306)/seata_product?timeout=5s&readTimeout=5s&writeTimeout=1s&parseTime=true&loc=Local&charset=utf8mb4,utf8"
-  report_retry_count: 5
-  report_success_enable: false
-  lock_retry_interval: 10ms
-  lock_retry_times: 30
+  reportRetryCount: 5
+  reportSuccessEnable: false
+  lockRetryInterval: 20ms
+  lockRetryTimes: 30
 enforcementPolicy:
   minTime: 5s
   permitWithoutStream: true
