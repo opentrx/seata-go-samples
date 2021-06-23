@@ -17,3 +17,6 @@ clientParameters:
   time: 10s
   timeout: 1s
   permitWithoutStream: true
+log:
+  logPath: /Users/scottlewis/dksl/temp/seata-samples/http/product_svc/conf/aggregation.log
+  logLevel: info

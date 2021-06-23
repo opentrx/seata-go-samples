@@ -12,6 +12,7 @@ import (
 	"github.com/opentrx/seata-golang/v2/pkg/client"
 	"github.com/opentrx/seata-golang/v2/pkg/client/config"
 	"github.com/opentrx/seata-golang/v2/pkg/client/rm"
+	"github.com/opentrx/seata-golang/v2/pkg/util/log"
 
 	"github.com/opentrx/seata-go-samples/product_svc/dao"
 )
@@ -22,7 +23,10 @@ func main() {
 
 	configPath := os.Getenv("ConfigPath")
 	conf := config.InitConfiguration(configPath)
+
+	log.Init(conf.Log.LogPath, conf.Log.LogLevel)
 	client.Init(conf)
+
 	rm.RegisterTransactionServiceServer(mysql.GetDataSourceManager())
 	mysql.RegisterResource(config.GetATConfig().DSN)
 

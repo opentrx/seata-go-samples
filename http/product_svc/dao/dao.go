@@ -3,6 +3,7 @@ package dao
 import (
 	"context"
 	"database/sql"
+	"github.com/opentrx/seata-golang/v2/pkg/util/log"
 )
 
 const (
@@ -36,6 +37,7 @@ func (dao *Dao) AllocateInventory(ctx context.Context, reqs []*AllocateInventory
 	}
 	err = tx.Commit()
 	if err != nil {
+		log.Error(err)
 		return err
 	}
 	return nil

@@ -7,6 +7,7 @@ import (
 	"github.com/opentrx/seata-golang/v2/pkg/client"
 	"github.com/opentrx/seata-golang/v2/pkg/client/config"
 	"github.com/opentrx/seata-golang/v2/pkg/client/tm"
+	"github.com/opentrx/seata-golang/v2/pkg/util/log"
 
 	"github.com/opentrx/seata-go-samples/aggregation_svc/svc"
 )
@@ -17,6 +18,8 @@ func main() {
 
 	configPath := os.Getenv("ConfigPath")
 	conf := config.InitConfiguration(configPath)
+
+	log.Init(conf.Log.LogPath, conf.Log.LogLevel)
 	client.Init(conf)
 
 	tm.Implement(svc.ProxySvc)

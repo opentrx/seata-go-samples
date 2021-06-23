@@ -3,6 +3,7 @@ package dao
 import (
 	"context"
 	"database/sql"
+	"github.com/opentrx/seata-golang/v2/pkg/util/log"
 	"time"
 )
 
@@ -96,6 +97,7 @@ func (dao *Dao) CreateSO(ctx context.Context, soMasters []*SoMaster) ([]uint64, 
 	}
 	err = tx.Commit()
 	if err != nil {
+		log.Error(err)
 		return nil, err
 	}
 	return result, nil
