@@ -1,31 +1,28 @@
-application_id: "product-svc"
-transaction_service_group: "127.0.0.1:8091"
-enable-client-batch-send-request: true
-seata_version: "1.2.0"
-# tcp
-getty:
-  reconnect_interval: 0
-  connection_number: 1
-  heartbeat_period: "10s"
-  getty_session_param:
-    compress_encoding : false
-    tcp_no_delay : true
-    tcp_keep_alive : true
-    keep_alive_period : "180s"
-    tcp_r_buf_size : 262144
-    tcp_w_buf_size : 65536
-    tcp_read_timeout : "1s"
-    tcp_write_timeout : "5s"
-    wait_timeout : "1s"
-    max_msg_len : 4096
-    session_name : "rpc_client"
+port: 8081
+addressing: localhost:8081
+serverAddressing: localhost:8091
 tm:
-  commit_retry_count: 5
-  rollback_retry_count: 5
+  commitRetryCount: 5
+  rollbackRetryCount: 5
 at:
   dsn: "root:123456@tcp(127.0.0.1:3306)/seata_product?timeout=5s&readTimeout=5s&writeTimeout=1s&parseTime=true&loc=Local&charset=utf8mb4,utf8"
-  report_retry_count: 5
-  report_success_enable: false
-  lock_retry_interval: 10ms
-  lock_retry_times: 30
-
+  reportRetryCount: 5
+  reportSuccessEnable: false
+  lockRetryInterval: 20ms
+  lockRetryTimes: 30
+enforcementPolicy:
+  minTime: 5s
+  permitWithoutStream: true
+serverParameters:
+  maxConnectionIdle: 15s
+  maxConnectionAge: 30s
+  maxConnectionAgeGrace: 5s
+  time: 5s
+  timeout: 1s
+clientParameters:
+  time: 10s
+  timeout: 1s
+  permitWithoutStream: true
+log:
+  logPath: /Users/scottlewis/dksl/temp/seata-samples/gorm/product_svc/product.log
+  logLevel: info

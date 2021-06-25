@@ -12,7 +12,6 @@ import (
 	"github.com/opentrx/seata-go-samples/aggregation_svc/svc"
 )
 
-
 func main() {
 	r := gin.Default()
 

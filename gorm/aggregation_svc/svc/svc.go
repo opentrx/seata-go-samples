@@ -7,13 +7,12 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
-)
 
-import (
-	"github.com/opentrx/seata-go-samples/order_svc/dao"
 	dao2 "github.com/opentrx/seata-go-samples/product_svc/dao"
-	context2 "github.com/transaction-wg/seata-golang/pkg/client/context"
-	"github.com/transaction-wg/seata-golang/pkg/client/tm"
+	context2 "github.com/opentrx/seata-golang/v2/pkg/client/base/context"
+	"github.com/opentrx/seata-golang/v2/pkg/client/base/model"
+
+	"github.com/opentrx/seata-go-samples/order_svc/dao"
 )
 
 type Svc struct {
@@ -115,13 +114,13 @@ type ProxyService struct {
 	CreateSo func(ctx context.Context, rollback bool) error
 }
 
-var methodTransactionInfo = make(map[string]*tm.TransactionInfo)
+var methodTransactionInfo = make(map[string]*model.TransactionInfo)
 
 func init() {
-	methodTransactionInfo["CreateSo"] = &tm.TransactionInfo{
+	methodTransactionInfo["CreateSo"] = &model.TransactionInfo{
 		TimeOut:     60000000,
 		Name:        "CreateSo",
-		Propagation: tm.REQUIRED,
+		Propagation: model.REQUIRED,
 	}
 }
 
@@ -129,7 +128,7 @@ func (svc *ProxyService) GetProxyService() interface{} {
 	return svc.Svc
 }
 
-func (svc *ProxyService) GetMethodTransactionInfo(methodName string) *tm.TransactionInfo {
+func (svc *ProxyService) GetMethodTransactionInfo(methodName string) *model.TransactionInfo {
 	return methodTransactionInfo[methodName]
 }
 

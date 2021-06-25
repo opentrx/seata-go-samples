@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/opentrx/mysql"
+	"github.com/opentrx/mysql/v2"
 	"github.com/opentrx/seata-golang/v2/pkg/client"
 	"github.com/opentrx/seata-golang/v2/pkg/client/config"
 	"github.com/opentrx/seata-golang/v2/pkg/client/rm"

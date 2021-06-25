@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/opentrx/mysql"
+	_ "github.com/opentrx/mysql/v2"
 	"gorm.io/gorm"
 	"gorm.io/gorm/callbacks"
 	"gorm.io/gorm/clause"

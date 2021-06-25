@@ -1,5 +1,5 @@
-port: 8083
-addressing: localhost:8083
+port: 8081
+addressing: localhost:8081
 serverAddressing: localhost:8091
 tm:
   commitRetryCount: 5
@@ -17,6 +17,3 @@ clientParameters:
   time: 10s
   timeout: 1s
   permitWithoutStream: true
-log:
-  logPath: /Users/scottlewis/dksl/temp/seata-samples/http/aggregation_svc/aggregation.log
-  logLevel: info

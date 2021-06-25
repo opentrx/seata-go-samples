@@ -2,29 +2,35 @@ package main
 
 import (
 	"context"
+	"net/http"
+	"os"
+	"time"
+
 	"github.com/gin-gonic/gin"
-	"github.com/opentrx/mysql"
-	dialector "github.com/opentrx/seata-go-samples/dialector/mysql"
-	"github.com/transaction-wg/seata-golang/pkg/client"
-	"github.com/transaction-wg/seata-golang/pkg/client/config"
+	"github.com/opentrx/mysql/v2"
+
+	"github.com/opentrx/seata-golang/v2/pkg/client"
+	"github.com/opentrx/seata-golang/v2/pkg/client/config"
+	"github.com/opentrx/seata-golang/v2/pkg/client/rm"
+	"github.com/opentrx/seata-golang/v2/pkg/util/log"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
-	"net/http"
-	"time"
-)
 
-import (
+	dialector "github.com/opentrx/seata-go-samples/dialector/mysql"
 	"github.com/opentrx/seata-go-samples/product_svc/dao"
 )
 
-const configPath = "/Users/scottlewis/dksl/temp/seata-samples/gorm/product_svc/conf/client.yml"
-
 func main() {
 	r := gin.Default()
-	config.InitConf(configPath)
-	client.NewRpcClient()
-	mysql.InitDataResourceManager()
+
+	configPath := os.Getenv("ConfigPath")
+	conf := config.InitConfiguration(configPath)
+
+	log.Init(conf.Log.LogPath, conf.Log.LogLevel)
+	client.Init(conf)
+
+	rm.RegisterTransactionServiceServer(mysql.GetDataSourceManager())
 	mysql.RegisterResource(config.GetATConfig().DSN)
 
 	db, err := gorm.Open(

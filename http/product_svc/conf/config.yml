@@ -24,5 +24,5 @@ clientParameters:
   timeout: 1s
   permitWithoutStream: true
 log:
-  logPath: /Users/scottlewis/dksl/temp/seata-samples/http/product_svc/conf/product.log
+  logPath: /Users/scottlewis/dksl/temp/seata-samples/http/product_svc/product.log
   logLevel: info
