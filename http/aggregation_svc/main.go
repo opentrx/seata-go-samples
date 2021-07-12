@@ -4,10 +4,10 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/opentrx/seata-golang/v2/pkg/client"
-	"github.com/opentrx/seata-golang/v2/pkg/client/config"
-	"github.com/opentrx/seata-golang/v2/pkg/client/tm"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
+	"github.com/dk-lockdown/harmonia/pkg/client"
+	"github.com/dk-lockdown/harmonia/pkg/client/config"
+	"github.com/dk-lockdown/harmonia/pkg/client/tm"
+	"github.com/dk-lockdown/harmonia/pkg/util/log"
 
 	"github.com/opentrx/seata-go-samples/aggregation_svc/svc"
 )

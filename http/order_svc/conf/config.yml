@@ -1,5 +1,5 @@
 port: 8082
-addressing: localhost:8082
+applicationID: orderSvc
 serverAddressing: localhost:8091
 tm:
   commitRetryCount: 5

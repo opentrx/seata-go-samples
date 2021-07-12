@@ -9,10 +9,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/opentrx/mysql/v2"
-	"github.com/opentrx/seata-golang/v2/pkg/client"
-	"github.com/opentrx/seata-golang/v2/pkg/client/config"
-	"github.com/opentrx/seata-golang/v2/pkg/client/rm"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
+	"github.com/dk-lockdown/harmonia/pkg/client"
+	"github.com/dk-lockdown/harmonia/pkg/client/config"
+	"github.com/dk-lockdown/harmonia/pkg/client/rm"
+	"github.com/dk-lockdown/harmonia/pkg/util/log"
 
 	"github.com/opentrx/seata-go-samples/order_svc/dao"
 )

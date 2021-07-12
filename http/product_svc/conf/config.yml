@@ -1,5 +1,5 @@
 port: 8081
-addressing: localhost:8081
+applicationID: productSvc
 serverAddressing: localhost:8091
 tm:
   commitRetryCount: 5
