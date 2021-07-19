@@ -4,12 +4,12 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-
 	"github.com/opentrx/seata-golang/v2/pkg/client"
 	"github.com/opentrx/seata-golang/v2/pkg/client/config"
 	"github.com/opentrx/seata-golang/v2/pkg/client/tcc"
 	"github.com/opentrx/seata-golang/v2/pkg/client/tm"
-	"github.com/opentrx/seata-golang/v2/samples/tcc/service"
+
+	"github.com/opentrx/seata-go-samples/service"
 )
 
 func main() {
