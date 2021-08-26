@@ -1,5 +1,4 @@
-port: 8083
-applicationID: aggregationSvc
+addressing: aggregationSvc
 serverAddressing: localhost:8091
 tm:
   commitRetryCount: 5

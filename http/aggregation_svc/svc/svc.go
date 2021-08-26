@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/http"
 
-	context2 "github.com/dk-lockdown/harmonia/pkg/client/base/context"
-	"github.com/dk-lockdown/harmonia/pkg/client/base/model"
+	context2 "github.com/opentrx/seata-golang/v2/pkg/client/base/context"
+	"github.com/opentrx/seata-golang/v2/pkg/client/base/model"
 
 	"github.com/opentrx/seata-go-samples/order_svc/dao"
 	dao2 "github.com/opentrx/seata-go-samples/product_svc/dao"

@@ -1,5 +1,4 @@
-port: 8082
-addressing: localhost:8082
+addressing: orderSvc
 serverAddressing: localhost:8091
 tm:
   commitRetryCount: 5
@@ -10,15 +9,6 @@ at:
   reportSuccessEnable: false
   lockRetryInterval: 20ms
   lockRetryTimes: 30
-enforcementPolicy:
-  minTime: 5s
-  permitWithoutStream: true
-serverParameters:
-  maxConnectionIdle: 15s
-  maxConnectionAge: 30s
-  maxConnectionAgeGrace: 5s
-  time: 5s
-  timeout: 1s
 clientParameters:
   time: 10s
   timeout: 1s

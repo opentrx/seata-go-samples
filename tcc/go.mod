@@ -4,5 +4,5 @@ go 1.15
 
 require (
 	github.com/gin-gonic/gin v1.6.3
-	github.com/opentrx/seata-golang/v2 v2.0.0-rc1
+	github.com/opentrx/seata-golang/v2 v2.0.4
 )
