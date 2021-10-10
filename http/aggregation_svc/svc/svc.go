@@ -119,7 +119,7 @@ var methodTransactionInfo = make(map[string]*tm.TransactionInfo)
 
 func init() {
 	methodTransactionInfo["CreateSo"] = &tm.TransactionInfo{
-		TimeOut:     60000000,
+		TimeOut:     60000,	//in seconds
 		Name:        "CreateSo",
 		Propagation: tm.REQUIRED,
 	}
