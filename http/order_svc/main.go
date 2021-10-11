@@ -3,7 +3,10 @@ package main
 import (
 	"context"
 	"database/sql"
+	"fmt"
 	"net/http"
+	"path/filepath"
+	"runtime"
 	"time"
 )
 
@@ -18,9 +21,16 @@ import (
 	"github.com/opentrx/seata-go-samples/order_svc/dao"
 )
 
-const configPath = "/Users/scottlewis/dksl/temp/seata-samples/http/order_svc/conf/client.yml"
-
 func main() {
+	_, path, _, ok := runtime.Caller(0)
+	if !ok {
+		fmt.Println("caller err")
+		return
+	}
+
+	configPath := filepath.Dir(path) + string(filepath.Separator) + "conf" + string(filepath.Separator) + "client.yml"
+	fmt.Println(configPath)
+
 	r := gin.Default()
 	config.InitConf(configPath)
 	client.NewRpcClient()

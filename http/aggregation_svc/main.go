@@ -1,19 +1,29 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/transaction-wg/seata-golang/pkg/client"
 	"github.com/transaction-wg/seata-golang/pkg/client/config"
 	"github.com/transaction-wg/seata-golang/pkg/client/tm"
+	"path/filepath"
+	"runtime"
 )
 
 import (
 	"github.com/opentrx/seata-go-samples/aggregation_svc/svc"
 )
 
-var configPath = "/Users/scottlewis/dksl/temp/seata-samples/http/aggregation_svc/conf/client.yml"
-
 func main() {
+	_, path, _, ok := runtime.Caller(0)
+	if !ok {
+		fmt.Println("caller err")
+		return
+	}
+
+	configPath := filepath.Dir(path) + string(filepath.Separator) + "conf" + string(filepath.Separator) + "client.yml"
+	fmt.Println(configPath)
+
 	r := gin.Default()
 	config.InitConf(configPath)
 	client.NewRpcClient()
