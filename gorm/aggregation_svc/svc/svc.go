@@ -120,7 +120,7 @@ func init() {
 	methodTransactionInfo["CreateSo"] = &model.TransactionInfo{
 		TimeOut:     60000000,
 		Name:        "CreateSo",
-		Propagation: model.REQUIRED,
+		Propagation: model.Required,
 	}
 }
 
