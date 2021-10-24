@@ -9,8 +9,17 @@ import (
 	"github.com/opentrx/seata-golang/v2/pkg/client/tm"
 	"github.com/opentrx/seata-golang/v2/pkg/util/log"
 
+	"net/http"
+	_ "net/http/pprof"
+
 	"github.com/opentrx/seata-go-samples/aggregation_svc/svc"
 )
+
+func init() {
+	go func() {
+		http.ListenAndServe("0.0.0.0:6060", nil)
+	}()
+}
 
 func main() {
 	r := gin.Default()
@@ -25,22 +34,33 @@ func main() {
 
 	r.GET("/createSoCommit", func(c *gin.Context) {
 
-		svc.ProxySvc.CreateSo(c, false)
+		if err := svc.ProxySvc.CreateSo(c, false); err == nil {
+			c.JSON(200, gin.H{
+				"success": true,
+				"message": "success",
+			})
+		} else {
+			c.JSON(500, gin.H{
+				"success": false,
+				"message": err.Error(),
+			})
+		}
 
-		c.JSON(200, gin.H{
-			"success": true,
-			"message": "success",
-		})
 	})
 
 	r.GET("/createSoRollback", func(c *gin.Context) {
 
-		svc.ProxySvc.CreateSo(c, true)
-
-		c.JSON(200, gin.H{
-			"success": true,
-			"message": "success",
-		})
+		if err := svc.ProxySvc.CreateSo(c, true); err == nil {
+			c.JSON(200, gin.H{
+				"success": true,
+				"message": "success",
+			})
+		} else {
+			c.JSON(500, gin.H{
+				"success": false,
+				"message": err.Error(),
+			})
+		}
 	})
 
 	r.Run(":8003")
