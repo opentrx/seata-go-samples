@@ -92,12 +92,12 @@ func init() {
 	methodTransactionInfo["TCCCommitted"] = &model.TransactionInfo{
 		TimeOut:     60000000,
 		Name:        "TCC_TEST_COMMITTED",
-		Propagation: model.REQUIRED,
+		Propagation: model.Required,
 	}
 	methodTransactionInfo["TCCCanceled"] = &model.TransactionInfo{
 		TimeOut:     60000000,
 		Name:        "TCC_TEST_CANCELED",
-		Propagation: model.REQUIRED,
+		Propagation: model.Required,
 	}
 }
 
