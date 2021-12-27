@@ -15,7 +15,7 @@ serverParameters:
   timeout: 1s
 clientTls:
   enable: false
-  certFile: ""
+  certFilePath: ""
   serverName: "test.seata.io"
 clientParameters:
   time: 10s

@@ -14,7 +14,7 @@ serverParameters:
   timeout: 1s
 clientTls:
   enable: false
-  certFile: ""
+  certFilePath: ""
   serverName: "test.seata.io"
 log:
   logPath: /Users/scottlewis/dksl/temp/seata-samples/gorm/aggregation_svc/aggregation.log
