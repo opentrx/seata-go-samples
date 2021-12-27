@@ -7,6 +7,10 @@ clientParameters:
   time: 10s
   timeout: 1s
   permitWithoutStream: true
+clientTls:
+  enable: false
+  certFile: ""
+  serverName: "test.seata.io"
 log:
   logPath: /Users/scottlewis/dksl/temp/seata-samples/http/aggregation_svc/aggregation.log
   logLevel: info
