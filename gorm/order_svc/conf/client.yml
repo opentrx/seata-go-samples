@@ -13,6 +13,10 @@ clientParameters:
   time: 10s
   timeout: 1s
   permitWithoutStream: true
+clientTLS:
+  enable: false
+  certFilePath: ""
+  serverName: "test.seata.io"
 log:
   logPath: /Users/scottlewis/dksl/temp/seata-samples/gorm/order_svc/order.log
   logLevel: info
