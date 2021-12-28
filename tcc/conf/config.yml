@@ -13,7 +13,7 @@ serverParameters:
   maxConnectionAgeGrace: 5s
   time: 5s
   timeout: 1s
-clientTls:
+clientTLS:
   enable: false
   certFilePath: ""
   serverName: "test.seata.io"
