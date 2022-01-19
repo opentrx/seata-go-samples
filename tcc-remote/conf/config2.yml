@@ -1,0 +1,23 @@
+port: 8082
+addressing: localhost:8082
+serverAddressing: localhost:8091
+tm:
+  commitRetryCount: 5
+  rollbackRetryCount: 5
+enforcementPolicy:
+  minTime: 5s
+  permitWithoutStream: true
+serverParameters:
+  maxConnectionIdle: 15s
+  maxConnectionAge: 30s
+  maxConnectionAgeGrace: 5s
+  time: 5s
+  timeout: 1s
+clientTLS:
+  enable: false
+  certFilePath: ""
+  serverName: "test.seata.io"
+clientParameters:
+  time: 10s
+  timeout: 1s
+  permitWithoutStream: true
