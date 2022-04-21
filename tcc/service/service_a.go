@@ -10,7 +10,7 @@ import (
 type ServiceA struct {
 }
 
-func (svc *ServiceA) Try(ctx *context.BusinessActionContext) (bool, error) {
+func (svc *ServiceA) Try(ctx *context.BusinessActionContext, async bool) (bool, error) {
 	word := ctx.ActionContext["hello"]
 	fmt.Println(word)
 	fmt.Println("Service A Tried!")
@@ -36,7 +36,7 @@ var serviceA = &ServiceA{}
 type TCCProxyServiceA struct {
 	*ServiceA
 
-	Try func(ctx *context.BusinessActionContext) (bool, error) `TccActionName:"ServiceA"`
+	Try func(ctx *context.BusinessActionContext, async bool) (bool, error) `TccActionName:"ServiceA"`
 }
 
 func (svc *TCCProxyServiceA) GetTccService() tcc.TccService {

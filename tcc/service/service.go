@@ -26,13 +26,13 @@ func (svc *Service) TCCCommitted(context context.Context) error {
 	}
 	businessActionContextB.ActionContext["hello"] = "hello world,this is from BusinessActionContext B"
 
-	resultA, err := TccProxyServiceA.Try(businessActionContextA)
+	resultA, err := TccProxyServiceA.Try(businessActionContextA, false)
 	fmt.Printf("result A is :%v", resultA)
 	if err != nil {
 		return err
 	}
 
-	resultB, err := TccProxyServiceB.Try(businessActionContextB)
+	resultB, err := TccProxyServiceB.Try(businessActionContextB, false)
 	fmt.Printf("result B is :%v", resultB)
 	if err != nil {
 		return err
@@ -55,13 +55,13 @@ func (svc *Service) TCCCanceled(context context.Context) error {
 	}
 	businessActionContextC.ActionContext["hello"] = "hello world,this is from BusinessActionContext C"
 
-	resultA, err := TccProxyServiceA.Try(businessActionContextA)
+	resultA, err := TccProxyServiceA.Try(businessActionContextA, false)
 	fmt.Printf("result A is :%v", resultA)
 	if err != nil {
 		return err
 	}
 
-	resultC, err := TccProxyServiceC.Try(businessActionContextC)
+	resultC, err := TccProxyServiceC.Try(businessActionContextC, false)
 	fmt.Printf("result C is :%v", resultC)
 	if err != nil {
 		return err

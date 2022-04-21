@@ -22,12 +22,11 @@ func (svc *Service) TCCCommitted(context context.Context) error {
 	// 业务参数全部放到 ActionContext 里
 	businessActionContextA.ActionContext["hello"] = "hello world,this is from BusinessActionContext A"
 
-	resultA, err := TccProxyServiceA.Try(businessActionContextA)
+	resultA, err := TccProxyServiceA.Try(businessActionContextA, false)
 	fmt.Printf("result A is :%v", resultA)
 	if err != nil {
 		return err
 	}
-
 
 	req2, err := http.NewRequest("GET", "http://localhost:8082/try", nil)
 	if err != nil {
@@ -54,7 +53,7 @@ func (svc *Service) TCCCanceled(context context.Context) error {
 	}
 	businessActionContextA.ActionContext["hello"] = "hello world,this is from BusinessActionContext A"
 
-	resultA, err := TccProxyServiceA.Try(businessActionContextA)
+	resultA, err := TccProxyServiceA.Try(businessActionContextA, false)
 	fmt.Printf("result A is :%v", resultA)
 	if err != nil {
 		return err

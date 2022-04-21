@@ -5,7 +5,7 @@ tm:
   rollbackRetryCount: 5
 clientParameters:
   time: 10s
-  timeout: 1s
+  timeout: 20s
   permitWithoutStream: true
 clientTLS:
   enable: false

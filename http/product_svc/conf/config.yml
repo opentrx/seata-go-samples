@@ -10,17 +10,17 @@ at:
   lockRetryInterval: 20ms
   lockRetryTimes: 30
 enforcementPolicy:
-  minTime: 5s
+  minTime: 5m
   permitWithoutStream: true
 serverParameters:
   maxConnectionIdle: 15s
   maxConnectionAge: 30s
   maxConnectionAgeGrace: 5s
   time: 5s
-  timeout: 1s
+  timeout: 20s
 clientParameters:
   time: 10s
-  timeout: 1s
+  timeout: 20s
   permitWithoutStream: true
 clientTLS:
   enable: false

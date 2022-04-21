@@ -4,14 +4,14 @@ tm:
   commitRetryCount: 5
   rollbackRetryCount: 5
 enforcementPolicy:
-  minTime: 5s
+  minTime: 5m
   permitWithoutStream: true
 serverParameters:
   maxConnectionIdle: 15s
   maxConnectionAge: 30s
   maxConnectionAgeGrace: 5s
   time: 5s
-  timeout: 1s
+  timeout: 20s
 clientTLS:
   enable: false
   certFilePath: ""

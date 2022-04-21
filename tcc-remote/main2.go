@@ -1,14 +1,15 @@
 package main
 
 import (
-	ctx "github.com/opentrx/seata-golang/v2/pkg/client/base/context"
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/opentrx/seata-go-samples/service"
 	"github.com/opentrx/seata-golang/v2/pkg/client"
+	ctx "github.com/opentrx/seata-golang/v2/pkg/client/base/context"
 	"github.com/opentrx/seata-golang/v2/pkg/client/config"
 	"github.com/opentrx/seata-golang/v2/pkg/client/tcc"
+
+	"github.com/opentrx/seata-go-samples/service"
 )
 
 func main() {
@@ -30,7 +31,7 @@ func main() {
 		}
 		businessActionContextB.ActionContext["hello"] = "hello world,this is from BusinessActionContext B"
 
-		service.TccProxyServiceB.Try(businessActionContextB)
+		service.TccProxyServiceB.Try(businessActionContextB, false)
 
 		c.JSON(200, gin.H{
 			"message": "pong",
